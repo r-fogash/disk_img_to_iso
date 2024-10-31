@@ -1,9 +1,11 @@
 set input_file_alias to choose file with prompt "Please select a disk image to convert:"
 set input_file_path to POSIX path of input_file_alias
-set output_file_path to quoted form of (replaceExtension(posix_path, "iso"))
-set shell_command to "hdiutil makehybrid -iso -joliet -o " & output_file_path & " " & (quoted form of posix_path)
+set output_file_path to quoted form of (replaceExtension(input_file_path, "iso"))
+set shell_command to "hdiutil makehybrid -iso -joliet -o " & output_file_path & " " & (quoted form of input_file_path)
 
 do shell script shell_command
+
+
 
 to replaceExtension(path, new_extension)
 	set original_string_delimiter to text item delimiters
