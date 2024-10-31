@@ -1,2 +1,8 @@
 # disk_img_to_iso
-Convert a disk image to ISO using Apple Script
+![Apple Script](https://img.shields.io/badge/Swift-5.3-orange)
+
+A helper scipt for converting a disk image into ISO.
+The script is:
+- shows a select file dialog
+- creates an output file name by replacing the input files extension
+- calls diskutil command line utility to convert the selected disk image into ISO
