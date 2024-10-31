@@ -1,5 +1,5 @@
 # disk_img_to_iso
-![Apple Script](https://img.shields.io/badge/Swift-5.3-orange)
+![Apple Script](https://img.shields.io/badge/AppleScript-orange)
 
 A helper scipt for converting a disk image into ISO.
 The script is:
